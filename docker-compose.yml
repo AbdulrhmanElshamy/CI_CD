@@ -1,0 +1,6 @@
+services:
+  ci-cd:
+    image: ${DOCKER_REGISTRY-}cicd
+    build:
+      context: .
+      dockerfile: CI-CD/Dockerfile
